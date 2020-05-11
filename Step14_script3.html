@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step14_script3.html</title>
+</head>
+<body>
+    <script>
+        //함수에 대한 이해
+
+        //undefined type 을 리턴해 주는 함수
+        var f1=function(){
+            console.log("f1 함수가 호출되었습니다.");
+            
+        };
+
+        //undefined type 을 리턴해 주는 함수
+        var f2=function(){
+            console.log("f2 함수가 호출되었습니다.");
+            return;
+        };
+
+        //number type 을 리턴해 주는 함수
+        var f3=function(){
+            console.log("f3 함수가 호출되었습니다.");
+            return 999;
+        };
+
+        //string type 을 리턴해 주는 함수
+        var f4=function(){
+            console.log("f4 함수가 호출되었습니다.");
+            return "abcd";
+        };
+
+        //object type 을 리턴해주는 함수
+        var f5=function(){
+            console.log("f5 함수가 호출되었습니다.");
+            return {num:1, name:"김구라"};
+        };
+
+        //array type 을 리턴해주는 함수 
+        var f6=function(){
+            console.log("f6 함수가 호출되었습니다.");
+            return [10, 20, 30];
+        };
+    </script>
+</body>
+</html>

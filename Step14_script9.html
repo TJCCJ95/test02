@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step14_script9.html</title>
+</head>
+<body>
+    <button onclick="ado()">+1</button>
+    <button onclick="adt()">+100</button>
+    <button onclick="adh()">+1000000</button>
+    <button onclick="reset()">리셋</button>
+    <button onclick="mio()">-1</button>
+    <button onclick="crs()">*</button>
+    <p id=num>0</p>
+    <script>
+        var fig = 0;
+        function ado() {
+            fig = fig + 1;
+            document.querySelector("#num").innerText=fig;
+        }
+        function adt() {
+            fig = fig + 100;
+            document.querySelector("#num").innerText=fig;
+        }
+        function adh() {
+            fig = fig + 1000000;
+            document.querySelector("#num").innerText=fig;
+        }
+        function reset() {
+            fig = 0
+            document.querySelector("#num").innerText=fig;
+        }
+        function mio() {
+            fig = fig - 1;
+            document.querySelector("#num").innerText=fig;
+        }
+        function crs() {
+            fig = fig * fig;
+            document.querySelector("#num").innerText=fig;
+        }
+    </script>
+</body>
+</html>

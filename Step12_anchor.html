@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step12_Anchor.html</title>
+    <style>
+        /* 클래스명이 spacer 인 요소에 적용할 css */
+        .spacer{
+            height: 500px;
+            background-color: yellow;
+        }
+        p > span{
+            color: red;
+            font-weight: bold;
+        }    
+    </style>
+</head>
+<body>
+    <h1>a(anchor) 요소는 하이퍼링크, 책갈피, javascript 등을 수행할때 사용</h1>
+    <ul>
+        <!-- href="이동할 페이지의 주소(위치)를 작성한다." -->
+        <!-- 현재 위치를 기준으로 상대 경로 이동 -->
+        <li><a href="hello.html">hello.html</a></li>
+        <!-- 웹에서의 절대 경로 이동 -->
+        <li><a href="http://14.63.164.99/student.html">공부방</a></li>
+        <!-- 파일 시스템에서의 절대 경로 이동 -->
+        <li><a href="C:acorn2020/visual_work/html/hello.html">hello.html</a></li>
+        <!-- 같은 페이지 내에서의 경로이동 -->
+        <li><a href="#one">id가 one 인 컨텐츠로 스크롤 이동</a></li>
+        <li><a href="#two">id가 two 인 컨텐츠로 스크롤 이동</a></li>
+        <li><a href="#three">id가 three 인 컨텐츠로 스크롤 이동</a></li>
+        <!-- javascript 수행하기 -->
+        <li><a href="javascript:console.log('hello!');">javascript 수행하기</a></li>
+        <li><a href="tel:010-7207-5814">전화걸기</a></li>
+        <li><a href="mailto:ncj0291@naver.com">이메일 쓰기</a></li>
+    </ul>
+    <div class="spacer"></div>
+    <p id="one"><span>one</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur obcaecati modi sit impedit voluptatibus distinctio alias beatae a commodi voluptas, fugit corrupti, aperiam rerum, rem eos quisquam itaque repudiandae?</p>
+    <div class="spacer"></div>
+    <p id="two"><span>two</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae maiores ducimus itaque aperiam debitis blanditiis sapiente earum inventore commodi quia at et quaerat repudiandae doloremque, perspiciatis adipisci expedita ut accusantium.</p>
+    <div class="spacer"></div>
+    <p id="three"><span>three</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quisquam neque impedit debitis sed ratione perspiciatis, quasi corporis eveniet voluptate velit at eos assumenda ad vel voluptas molestiae pariatur perferendis!</p>
+    <div class="spacer"></div>
+    
+</body>
+</html>

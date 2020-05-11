@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step13_form.html</title>
+    <style>
+        .container{
+            background-color: rgb(190, 135, 62);
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- div는 묶어주기위한 block 요소.  -->
+    <div class="container">
+        <h1>폼 요소 작성하기</h1>
+        <!-- form 요소는 서버에 자료를 제출하기위해 쓰는 요소. loginAction : 제출될 위치를 결정해주는 값(서버)  -->
+        <form action="loginAction">
+            <!-- for의 value = 아랫줄 id의 value(pwd도 동일) -->
+            <label for="email">이메일</label>
+            <!-- type속성의 값중에서 text는 보이고 password는 안보이게 처리. -->
+            <!-- name="***" : 서버에 입력내용을 추출하기 위해 필요한 값 -->
+            <input type="text" id="email" name="email" />
+            <label for="pwd">비밀번호</label>
+            <input type="password" id="pwd" name="pwd" />
+            <!-- button은 항상 form 안에 있어야한다. -->
+            <button type="submit">로그인</button>
+            <button type="reset">취소</button>
+        </form>
+        
+    </div>
+</body>
+</html>
